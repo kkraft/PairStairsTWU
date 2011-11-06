@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Add Programmers</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <textarea id="programmer_names" name='programmer_names' label="programmer_names" ></textarea>
+    <input id="add_programmer" type='submit' value='Add'/>
+</form>
+<h2>List Of Programmer Names</h2>
+<div id='list_programmer_names'>
+    {% for programmer in programmers %}
+        <div class='name'>
+        {{ programmer.name }}
+        </div>
+</div>
+    {% endfor %}
+
+<div>
+    <a id = 'pairstairs' href="/pairstairs" type='submit'>Create Pair Stairs</a>
+</div>
+</body>
+</html>
