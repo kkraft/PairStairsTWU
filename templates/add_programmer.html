@@ -3,6 +3,19 @@
 <html>
 <head>
     <title>Add Programmers</title>
+
+<script type="text/javascript">
+    function validateForm()
+    {
+    var x=document.forms["programmerForm"]["programmer_names"].value;
+    if (x==null || x=="")
+      {
+      alert("Name Must Not Be Blank");
+      return false;
+      }
+    }
+</script>
+
 </head>
 <h2><b>Add/Delete Programmers on Your Pair Stairs</b></h2>
 <body>
