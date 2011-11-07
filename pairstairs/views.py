@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, redirect
 from django.template.context import RequestContext
 from models import Pair
 from pairstairs.models import Programmer
@@ -33,9 +33,24 @@ def pairstairs(request):
     return render_to_response('pairstairs.html', {'programmers' : programmers, 'pairs' : pairs} )
 
 def add_count(request,pair1_id, pair2_id):
-    first = Programmer.objects.get(id = pair1_id)
-    second = Programmer.objects.get(id = pair2_id)
-    pair = Pair.objects.get(pair1 = first, pair2 = second)
+    pair1 = Programmer.objects.get(id = pair1_id)
+    pair2 = Programmer.objects.get(id = pair2_id)
+    pair = Pair.objects.get(pair1 = pair1, pair2 = pair2)
     pair.count+=1
     pair.save()
     return pairstairs(request)
+
+def delete_programmers(request):
+    Programmer.objects.all().delete()
+    return redirect('/add_programmer/')
+
+def delete_programmer(request,person_id):
+    Programmer.objects.filter(pk=person_id).delete()
+    return redirect('/add_programmer/')
+
+def reset_counts(request):
+    pairs = Pair.objects.all()
+    for pair in pairs:
+        pair.count = 0
+        pair.save()
+    return redirect('/pairstairs/')

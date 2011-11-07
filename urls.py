@@ -10,6 +10,10 @@ urlpatterns = patterns('',
     url(r'^add_programmer/', views.add_programmer),
     url(r'^pairstairs/', views.pairstairs),
     url(r'^add_count/(?P<pair1_id>.+?)/(?P<pair2_id>.+?)$', views.add_count),
+    url(r'^delete_programmers/', views.delete_programmers),
+    url(r'^delete_programmer/(?P<person_id>.+?)', views.delete_programmer),
+    url(r'^reset_counts/', views.reset_counts)
+
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

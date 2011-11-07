@@ -4,20 +4,24 @@
 <head>
     <title>Add Programmers</title>
 </head>
+<h2><b>Add/Delete Programmers on Your Pair Stairs</b></h2>
 <body>
 <form method="POST">
     {% csrf_token %}
     <textarea id="programmer_names" name='programmer_names' label="programmer_names" ></textarea>
     <input id="add_programmer" type='submit' value='Add'/>
 </form>
-<h2>List Of Programmer Names</h2>
+<h3>List Of Programmer Names</h3>
 <div id='list_programmer_names'>
     {% for programmer in programmers %}
-        <div class='name'>
-        {{ programmer.name }}
+        <div>
+        <b class="name">{{ programmer.name }}</b> <a id='delete_programmer' href="/delete_programmer/{{ programmer.id }}/">Delete</a>
         </div>
 </div>
     {% endfor %}
+<div>
+    <a id='delete_programmers' href="/delete_programmers" type='submit' >Delete All Programmers</a>
+</div>
 
 <div>
     <a id = 'pairstairs' href="/pairstairs" type='submit'>Create Pair Stairs</a>

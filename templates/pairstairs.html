@@ -13,12 +13,18 @@
        {% for pair in pairs %}
            {% if pair.pair2 == programmer %}
                <td align="center">
-               <a href="/add_count/{{ pair.pair1_id }}/{{ pair.pair2_id }}">{{ pair.count }}</a></td>
+               <a id="pair_count" href="/add_count/{{ pair.pair1_id }}/{{ pair.pair2_id }}">{{ pair.count }}</a></td>
            {% endif %}
        {% endfor %}
            <td>{{ programmer.name }}</td>
        </tr>
    {% endfor %}
    </table>
+<div>
+    <a id='reset_counts' href="/reset_counts" type='submit'>Reset Counts</a>
+</div>
+<div>
+    <a id='back_to_add_programmers' href="/add_programmer/">Back To Add Programmers</a>
+</div>
 </body>
 </html>
