@@ -39,7 +39,7 @@
       <file leaf-file-name="pairstairs_tests.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/func_tests/pairstairs_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="15" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+            <state line="6" column="12" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.4615386">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="add_programmer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/add_programmer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="48" selection-start="610" selection-end="610" vertical-scroll-proportion="-7.6666665">
+            <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -57,7 +57,16 @@
       <file leaf-file-name="tests.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pairstairs/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="405" selection-end="405" vertical-scroll-proportion="0.4079498">
+            <state line="13" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4257642">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pairstairs/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -72,10 +81,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="5" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pairstairs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="23" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.0">
+            <state line="20" column="16" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +102,7 @@
       <file leaf-file-name="pairstairs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/pairstairs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="44" selection-start="740" selection-end="740" vertical-scroll-proportion="-14.375">
+            <state line="4" column="30" selection-start="155" selection-end="155" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -111,11 +129,11 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/pairstairs/models.py" />
         <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/templates/pairstairs.html" />
-        <option value="$PROJECT_DIR$/pairstairs/views.py" />
-        <option value="$PROJECT_DIR$/pairstairs/tests.py" />
         <option value="$PROJECT_DIR$/func_tests/pairstairs_tests.py" />
         <option value="$PROJECT_DIR$/templates/add_programmer.html" />
+        <option value="$PROJECT_DIR$/templates/pairstairs.html" />
+        <option value="$PROJECT_DIR$/pairstairs/tests.py" />
+        <option value="$PROJECT_DIR$/pairstairs/views.py" />
       </list>
     </option>
   </component>
@@ -230,30 +248,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="options.lastSelected" value="com.jetbrains.python.buildout.BuildoutConfigurable" />
     <property name="recentsLimit" value="5" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Django tests.Test: pairstairs.PairStairsTests">
-    <configuration default="false" name="Test: pairstairs.PairStairsTests.test_reset_changes_pair_counts_to_zero" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="PairStairsTWU" />
-      <option name="TARGET" value="pairstairs.PairStairsTests.test_reset_changes_pair_counts_to_zero" />
-      <option name="SETTINGS_FILE" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in TestPairStairs.test_that_clicking_reset_counts_changes_counts_to_zero" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
+    <configuration default="false" name="Unittests in TestPairStairs.test_that_clicking_on_pairing_count_adds_1" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -265,11 +267,27 @@
       <module name="PairStairsTWU" />
       <option name="SCRIPT_NAME" value="pairstairs_tests.py" />
       <option name="CLASS_NAME" value="TestPairStairs" />
-      <option name="METHOD_NAME" value="test_that_clicking_reset_counts_changes_counts_to_zero" />
+      <option name="METHOD_NAME" value="test_that_clicking_on_pairing_count_adds_1" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="PUREUNITTEST" value="true" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test: pairstairs" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="PairStairsTWU" />
+      <option name="TARGET" value="pairstairs" />
+      <option name="SETTINGS_FILE" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -295,7 +313,7 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in TestPairStairs.test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
+    <configuration default="false" name="Unittests in TestPairStairs.test_that_link_back_to_add_programmers_works_correctly" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -307,7 +325,7 @@
       <module name="PairStairsTWU" />
       <option name="SCRIPT_NAME" value="pairstairs_tests.py" />
       <option name="CLASS_NAME" value="TestPairStairs" />
-      <option name="METHOD_NAME" value="test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted" />
+      <option name="METHOD_NAME" value="test_that_link_back_to_add_programmers_works_correctly" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
@@ -457,10 +475,10 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.PairStairsTWU" />
-      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: pairstairs.PairStairsTests.test_reset_changes_pair_counts_to_zero" />
-      <item index="2" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_clicking_reset_counts_changes_counts_to_zero" />
+      <item index="1" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_clicking_on_pairing_count_adds_1" />
+      <item index="2" class="java.lang.String" itemvalue="Django tests.Test: pairstairs" />
       <item index="3" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs" />
-      <item index="4" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted" />
+      <item index="4" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_link_back_to_add_programmers_works_correctly" />
       <item index="5" class="java.lang.String" itemvalue="Django tests.Test: pairstairs.PairStairsTests" />
     </list>
   </component>
@@ -491,7 +509,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="32" width="1440" height="874" extended-state="0" />
+    <frame x="-1" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -569,23 +587,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pairstairs/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="5" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.44104803">
           <folding />
         </state>
       </provider>
@@ -604,37 +608,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pairstairs.html">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="44" selection-start="740" selection-end="740" vertical-scroll-proportion="-14.375">
+        <state line="120" column="5" selection-start="4361" selection-end="4361" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pairstairs/views.py">
+    <entry file="file://$PROJECT_DIR$/pairstairs/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="23" selection-start="1819" selection-end="1819" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_programmer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="48" selection-start="610" selection-end="610" vertical-scroll-proportion="-7.6666665">
+        <state line="4" column="34" selection-start="159" selection-end="159" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pairstairs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="155" selection-end="155" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pairstairs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/func_tests/pairstairs_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="15" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
+        <state line="6" column="12" selection-start="178" selection-end="178" vertical-scroll-proportion="-3.4615386">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pairstairs/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="405" selection-end="405" vertical-scroll-proportion="0.4079498">
+        <state line="13" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.4257642">
           <folding />
         </state>
       </provider>

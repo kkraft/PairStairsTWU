@@ -9,23 +9,20 @@ def add_programmer(request):
     programmers = Programmer.objects.all()
     if request.method == 'POST':
         name = request.POST['programmer_names']
-        Programmer(name=name).save()
-        create_pair()
+        programmer = Programmer(name=name)
+        programmer.save()
+        create_pair(programmer)
     return render_to_response('add_programmer.html', RequestContext(request, {'programmers' : programmers}))
 
-def create_pair():
+def create_pair(programmer):
     programmers = Programmer.objects.all()
-    count = len(programmers)
-    i = 0
-    while i<count:
-        j = i+1
-        while j<count:
-            pairs = Pair.objects.filter(pair1=programmers[i], pair2 = programmers[j])
-            if not len(pairs):
-                pair = Pair(pair1 = programmers[i], pair2 = programmers[j], count = 0)
-                pair.save()
-            j +=1
-        i +=1
+    number_programmers=len(programmers)
+    for programmer1 in programmers:
+        if not programmer1.id  == number_programmers:
+            pair = Pair(pair1 = programmer1, pair2 = programmer, count = 0)
+            pair.save()
+
+
 
 def pairstairs(request):
     programmers = Programmer.objects.all()

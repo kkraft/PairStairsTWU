@@ -3,25 +3,26 @@
 <html>
 <head>
     <title>Pair Stairs</title>
+
 </head>
 <h1>Pair Stairs</h1>
 <body>
-     <table>
+     <table border = '1'>
    {% for programmer in programmers %}
        <tr>
-           <td id = "programmer_row" align="center">{{ programmer.name }}</td>
+           <td class = "programmer1" id = "programmer_row" align="center"><font size=5>{{ programmer.name }}</font></td>
        {% for pair in pairs %}
            {% if pair.pair2 == programmer %}
                <td align="center">
-               <a id="pair_count" href="/add_count/{{ pair.pair1_id }}/{{ pair.pair2_id }}">{{ pair.count }}</a></td>
+               <a class="pair_count" id="pair_count" href="/add_count/{{ pair.pair1_id }}/{{ pair.pair2_id }}"><font size=5>{{ pair.count }}</font></a></td>
            {% endif %}
        {% endfor %}
-           <td>{{ programmer.name }}</td>
+           <td class = "programmer2"><font size=5>{{ programmer.name }}</font></td>
        </tr>
    {% endfor %}
    </table>
 <div>
-    <a id='reset_counts' href="/reset_counts" type='submit'>Reset Counts</a>
+    <a onclick="return confirm_count()"  id='reset_counts' href="/reset_counts" type='submit'>Reset Counts</a>
 </div>
 <div>
     <a id='back_to_add_programmers' href="/add_programmer/">Back To Add Programmers</a>

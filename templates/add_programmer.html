@@ -6,7 +6,7 @@
 </head>
 <h2><b>Add/Delete Programmers on Your Pair Stairs</b></h2>
 <body>
-<form method="POST">
+<form name="programmerForm" method="POST" onsubmit="return validateForm()" >
     {% csrf_token %}
     <textarea id="programmer_names" name='programmer_names' label="programmer_names" ></textarea>
     <input id="add_programmer" type='submit' value='Add'/>
