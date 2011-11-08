@@ -36,10 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pairstairs_tests.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pairstairs_tests.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/func_tests/pairstairs_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="12" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.4583334">
+            <state line="5" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.8846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ve/lib/python2.7/site-packages/django/utils/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="243" column="8" selection-start="8054" selection-end="8054" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -48,16 +57,16 @@
       <file leaf-file-name="add_programmer.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/add_programmer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="-13.708333">
+            <state line="37" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="-11.208333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tests.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pairstairs/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+            <state line="13" column="12" selection-start="402" selection-end="402" vertical-scroll-proportion="0.4257642">
               <folding />
             </state>
           </provider>
@@ -129,11 +138,11 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/pairstairs/models.py" />
         <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/func_tests/pairstairs_tests.py" />
         <option value="$PROJECT_DIR$/templates/pairstairs.html" />
         <option value="$PROJECT_DIR$/pairstairs/tests.py" />
         <option value="$PROJECT_DIR$/pairstairs/views.py" />
         <option value="$PROJECT_DIR$/templates/add_programmer.html" />
+        <option value="$PROJECT_DIR$/func_tests/pairstairs_tests.py" />
       </list>
     </option>
   </component>
@@ -254,28 +263,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python's unittest.Unittests in TestPairStairs">
-    <configuration default="false" name="Unittests in TestPairStairs.test_that_clicking_on_pairing_count_adds_1" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="DJANGO_SETTINGS_MODULE" value="settings" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../ve/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/func_tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <module name="PairStairsTWU" />
-      <option name="SCRIPT_NAME" value="pairstairs_tests.py" />
-      <option name="CLASS_NAME" value="TestPairStairs" />
-      <option name="METHOD_NAME" value="test_that_clicking_on_pairing_count_adds_1" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
-      <option name="PATTERN" value="" />
-      <option name="PUREUNITTEST" value="true" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Django tests.Test: pairstairs.PairStairsTests">
     <configuration default="false" name="Test: pairstairs" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -346,6 +334,27 @@
       <module name="PairStairsTWU" />
       <option name="TARGET" value="pairstairs.PairStairsTests" />
       <option name="SETTINGS_FILE" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in TestPairStairs.test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted" type="PythonUnitTestConfigurationType" factoryName="Python's unittest" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="DJANGO_SETTINGS_MODULE" value="settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../ve/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/func_tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <module name="PairStairsTWU" />
+      <option name="SCRIPT_NAME" value="pairstairs_tests.py" />
+      <option name="CLASS_NAME" value="TestPairStairs" />
+      <option name="METHOD_NAME" value="test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="PUREUNITTEST" value="true" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
@@ -475,11 +484,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.PairStairsTWU" />
-      <item index="1" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_clicking_on_pairing_count_adds_1" />
-      <item index="2" class="java.lang.String" itemvalue="Django tests.Test: pairstairs" />
-      <item index="3" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs" />
-      <item index="4" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_link_back_to_add_programmers_works_correctly" />
-      <item index="5" class="java.lang.String" itemvalue="Django tests.Test: pairstairs.PairStairsTests" />
+      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: pairstairs" />
+      <item index="2" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs" />
+      <item index="3" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_link_back_to_add_programmers_works_correctly" />
+      <item index="4" class="java.lang.String" itemvalue="Django tests.Test: pairstairs.PairStairsTests" />
+      <item index="5" class="java.lang.String" itemvalue="Python's unittest.Unittests in TestPairStairs.test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -509,7 +518,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1440" height="874" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -520,7 +529,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25431034" sideWeight="0.6706349" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994709" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32936507" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -638,21 +647,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_programmer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="-13.708333">
+        <state line="37" column="0" selection-start="1159" selection-end="1159" vertical-scroll-proportion="-11.208333">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pairstairs/tests.py">
+    <entry file="file://$PROJECT_DIR$/../ve/lib/python2.7/site-packages/django/utils/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+        <state line="243" column="8" selection-start="8054" selection-end="8054" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/func_tests/pairstairs_tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.4583334">
+        <state line="5" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="-2.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pairstairs/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="402" selection-end="402" vertical-scroll-proportion="0.4257642">
           <folding />
         </state>
       </provider>

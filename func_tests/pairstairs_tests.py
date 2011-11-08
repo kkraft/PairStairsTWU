@@ -1,10 +1,15 @@
 from django.utils.unittest.case import TestCase
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from pairstairs.models import Programmer
 
 
 class TestPairStairs(TestCase):
+
+    def setUp(self):
+        self.driver = webdriver.Chrome()
+        self.driver.get('http://localhost:8000/add_programmer')
+        self.driver.find_element(By.CSS_SELECTOR, '#delete_programmers').click()
+        self.driver.close()
 
     def test_that_programmers_are_added_to_programmer_list_when_name_is_entered_and_submitted(self):
         self.driver = webdriver.Chrome()
@@ -72,9 +77,6 @@ class TestPairStairs(TestCase):
         pair_count = self.driver.find_element(By.CSS_SELECTOR, '#pair_count')
         self.assertEqual(pair_count.text, '0')
 
-    def tearDown(self):
-        Programmer.objects.all().delete()
-        self.driver.quit()
 
     def prepare_two_programmers(self):
         self.driver = webdriver.Chrome()
@@ -85,3 +87,8 @@ class TestPairStairs(TestCase):
         element = self.driver.find_element(By.CSS_SELECTOR, '#programmer_names')
         element.send_keys('Jason Wickstra')
         self.driver.find_element(By.CSS_SELECTOR, '#add_programmer').click()
+
+    def tearDown(self):
+        self.driver.get('http://localhost:8000/add_programmer')
+        self.driver.find_element(By.CSS_SELECTOR, '#delete_programmers').click()
+        self.driver.close()
